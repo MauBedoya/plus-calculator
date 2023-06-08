@@ -1,0 +1,19 @@
+{
+  "name": "plus-calculator",
+  "version": "1.0.0",
+  "description": "Calculadora básica con funciones extra.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite --host",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MauBedoya",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.3.7"
+  }
+}

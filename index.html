@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dmpiwivwa/image/upload/v1686009667/plus-calculator/favicon_qzsfqu.png" type="image/x-icon">
+  <title>Plus Calculator</title>
+  <script defer type="module" src="./src/scripts/index.js"></script>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="variables-screen">
+      <div class="variables-screen__panel">
+        <h3>Variables</h3>
+        <p class="variable-ANS"></p>
+        <p class="variable-X"></p>
+        <p class="variable-Y"></p>
+        <p class="variable-Z"></p>
+      </div>
+    </div>
+    <div class="calculator">
+      <div class="calculator__screen">
+        <p class="screen__panel screen__panel--operation"></p>
+        <p class="screen__panel screen__panel--result"></p>
+      </div>
+      <div class="calculator__keypad">
+        <input type="button" value="("></input>
+        <input type="button" value=")"></input>
+        <input type="button" value=""></input>
+        <input type="button" value=""></input>
+        <input type="button" value=""></input>
+        <input type="button" value="X"></input>
+        <input type="button" value="Y"></input>
+        <input type="button" value="Z"></input>
+        <input type="button" value="SET"></input>
+        <input type="button" value="?" class="info-btn"></input>
+        <input type="button" value="7"></input>
+        <input type="button" value="8"></input>
+        <input type="button" value="9"></input>
+        <input type="button" value="DEL"></input>
+        <input type="button" value="AC"></input>
+        <input type="button" value="4"></input>
+        <input type="button" value="5"></input>
+        <input type="button" value="6"></input>
+        <input type="button" value="*"></input>
+        <input type="button" value="/"></input>
+        <input type="button" value="1"></input>
+        <input type="button" value="2"></input>
+        <input type="button" value="3"></input>
+        <input type="button" value="+"></input>
+        <input type="button" value="-"></input>
+        <input type="button" value="0"></input>
+        <input type="button" value="."></input>
+        <input type="button" value="ANS"></input>
+        <input type="button" value="=" class="emphasis"></input>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="info-modal">
+    <button class="info-modal__close-btn">X</button>
+    <div class="info-modal__content">
+      <h1 class="info-modal__title">Plus Calculator</h1>
+      <p>Esta calculadora ofrece características adicionales en comparación con las calculadoras básicas. A continuación, se presenta un breve manual de uso para aprovechar estas funciones adicionales.</p>
+      <h2 class="info-modal__subtitle">Características</h2>
+      <ul>
+        <li>Introducción de valores mediante botones y teclado.</li>
+        <li>Multiplicación implícita con el uso de paréntesis.</li>
+        <li>Almacenado y uso de variables mediante el "Session Storage".</li>
+      </ul>
+      <h2 class="info-modal__subtitle">Uso de Variables</h2>
+      <p>Para inicializar unas de las 3 variables disponibles, se debe seguir la siguiente estructura:</p>
+      <span class="text-bold">[variable]SET[valor]</span>
+      <p>Por ejemplo:</p>
+      <span class="text-bold">XSET10</span><span>Asigna el valor "10" a la variable "X"</span>
+      <h2 class="info-modal__subtitle">Atajos de teclado</h2>
+      <p>Todos los botones tienen asignado el mismo valor que en el teclado, en caso de los botones especiales, se asignaron nuevas teclas o combinaciones:</p>
+      <ul>
+        <li>DEL = &larr; (Backspace)</li>
+        <li>AC = Supr (Suprimir)</li>
+        <li>ANS = Alt + A</li>
+        <li>SET = Alt + S</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
