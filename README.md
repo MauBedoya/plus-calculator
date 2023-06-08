@@ -9,7 +9,7 @@ Este proyecto tiene como objetivo añadir valor a un ejercicio básico, como lo 
 1. Clonar repositorio.
 
   ```bash
-  git clone
+  git clone git@github.com:MauBedoya/plus-calculator.git
   ```
 
 2. Instalación de dependencias.
